@@ -1,16 +1,17 @@
-Using mern-infrastructureto Create MERN-Stack Projects in the Future
-Here's the process to create a new MERN-Stack project that starts with the infrastructure code:
+# Workout Tracker App
 
-Clone the mern-infrastructure repo: git clone <url of mern-infrastructure> <name-of-project>
+## Introduction
 
-Note that the folder created will be same as <name-of-project>instead of mern-infrastructure
+ A workout tracker app made for users to keep track of which muscles they have worked on already in a week and better plan their next workout. 
 
-cd <name-of-project>
-Install the Node modules: npm i
-Create a .env (touch .env) and add entries for DATABASE_URLand SECRET
-Update the "name": "mern-infrastructure"in package.json to the name of your project.
-Create a new repo on your personal GH account.
-Copy the new GH repo's URL.
-Update the remote's URL: git remote set-url origin <paste the copied GH url>
-Push for the first time: git push -u origin main
-Have fun coding your new project and don't forget to make frequent commits!
+## Technologies Used: 
+A list of all technologies, libraries, APIs, etc. used in the project.
+
+## Getting Started: 
+Links to the project's planning (Trello board) and the deployed app on Heroku.
+
+## Unsolved Problems: 
+List any unsolved issues.
+
+## Roadmap: 
+Identify future features and enhancements planned for the project.
