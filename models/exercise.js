@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 // Mongoose schema - structure/blueprint - defining the properties 
 const exerciseSchema = new mongoose.Schema({
     //add multiple exercises
-    exercise: {
+    exerciseName: {
         type: String,
         required: true
     },
@@ -22,6 +22,7 @@ const exerciseSchema = new mongoose.Schema({
        max: 100   
     }
 },
+{timestamps: true}
 )
 
 

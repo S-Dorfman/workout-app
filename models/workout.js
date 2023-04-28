@@ -1,6 +1,9 @@
 //* workout schema
 
+
 const mongoose = require('mongoose');
+
+const exercise = require('./exercise');
 
 // Mongoose schema - structure/blueprint - defining the properties 
 const workoutSchema = new mongoose.Schema({
@@ -8,10 +11,11 @@ const workoutSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    createdAt: {
+    workoutDate: {
         type: Date,
         default: Date.now()
-    }
+    },
+    exercises: [exercise]
     },
     {timestamps: true}
 )

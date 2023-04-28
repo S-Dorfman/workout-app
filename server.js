@@ -26,6 +26,7 @@ app.use(require('./config/checkToken'));
 
 // * All other routes
 app.use('/api/users', require('./routes/api/users'));
+//todo workout endpiont - follow data to routers-controllers-models
 
 
 
