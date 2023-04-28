@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import NewWorkoutPage from './pages/NewWorkoutPage';
 import AuthPage from './pages/AuthPage';
-import OrderHistoryPage from './pages/OrderHistoryPage';
+import WorkoutHistoryPage from './pages/WorkoutHistoryPage.js';
 import NavBar from './components/NavBar';
 
 import { getUser } from './utilities/users-service';
@@ -20,8 +20,8 @@ function App() {
       <>
       <NavBar user={user} setUser={setUser}/>
       <Routes>
-        <Route path='/orders/new' element={ <NewWorkoutPage /> }/>
-        <Route path='/orders' element={ <OrderHistoryPage /> }/>
+        <Route path='/workouts/new' element={ <NewWorkoutPage /> }/>
+        <Route path='/workouts' element={ <WorkoutHistoryPage /> }/>
       </Routes>
       </>
      : 
