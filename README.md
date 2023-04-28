@@ -2,7 +2,10 @@
 
 ## Introduction
 
- A workout tracker app made for users to keep track of which muscles they have worked on already in a week and better plan their next workout. 
+ A workout tracker app made for fitness enthusiasts to keep track of which muscle groups they have worked out already in a week and better plan their next workout. 
+
+## Resources
+
 
 ## Technologies Used: 
 A list of all technologies, libraries, APIs, etc. used in the project.
