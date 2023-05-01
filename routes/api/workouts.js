@@ -4,7 +4,7 @@
 const express = require('express');
 const router = express.Router();
 const workoutCtrl = require('../../controllers/api/workouts');
-const ensureLoggedIn = require('../../config/ensureLoggedIn')
+// const ensureLoggedIn = require('../../config/ensureLoggedIn')
 
 
 

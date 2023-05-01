@@ -9,38 +9,34 @@ const Workout = require('../../models/workout')
 
 async function create(req, res) {
     console.log(req.body);
-    const workout = await Workout.create(req.body)
-    console.log(workout)
-    // res.json(req.exp)
+    // Try Catch: If we get a good request we will go within TRY and create a workout, 
+    // if there is an error we will go within CATCH, there will be a status code response of 400 and an error within the format of JSON
+    try {
+        // creating a new workout
+        const workout = await Workout.create(req.body);
+        console.log(workout); 
+        // we can use res.json to send back just a string
+        res.json(req.body);
+
+    } catch (error) {
+        console.log(error);
+        res.status(400).json(error)
+    }
 }
 
 module.exports = {
     create
 }
 
-// function createJWT(workout) {
-//     return jwt.sign({workout}, process.env.SECRET, {expiresIn: '24h'})       
+// async function create(req, res) {
+//     console.log(req.body);
+//     const workout = await Workout.create(req.body)
+//     console.log(workout)
+    // res.json(req.exp)
 // }
 
-// async function create(req, res) {
-//     // console.log('[from Post handler]', req.body);
-//     // Try Catch: If we get a good request we will go within TRY and create a workout, 
-//     // if there is an error we will go within CATCH, there will be a status code response of 400 and an error within the format of JSON
-//     try {
-//         // creating a new workout
-//         const workout = await workout.create(req.body);
-//         console.log(workout);
-
-//         // creating a new jwt
-//         const token = createJWT(workout);
-        
-//         // we can use res.json to send back just a string
-//         res.json(token);
-
-//     } catch (error) {
-//         console.log(error);
-//         res.status(400).json(error)
-//     }
+// module.exports = {
+//     create
 // }
 
 
