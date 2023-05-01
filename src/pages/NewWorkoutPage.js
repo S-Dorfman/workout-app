@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { logWorkout } from '../utilities/workout-api';
+
 function NewWorkoutPage() {
   const [showAddExercise, setShowAddExercise] = useState(false);
   const [workout, setWorkout] = useState({muscleGroup: "", workoutDate: ""});
@@ -14,6 +16,11 @@ function NewWorkoutPage() {
     e.preventDefault()
     console.log(workout)
     console.log(exercise)
+    const workoutData = {
+      ...workout,
+      exercises: exercise
+    }
+    const res = logWorkout(workoutData)
   }
   return (
     <div>

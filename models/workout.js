@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 const exercise = require('./exercise');
 
+
 // Mongoose schema - structure/blueprint - defining the properties 
 const workoutSchema = new mongoose.Schema({
     muscleGroup: {

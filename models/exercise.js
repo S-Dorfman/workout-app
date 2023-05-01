@@ -11,15 +11,13 @@ const exerciseSchema = new mongoose.Schema({
     },
     sets: {
         type: Number,
-        //limit # 
-       min: 1,
-       max: 15 
+        min: 1,
+        max: 15   
     },
     reps: {
         type: Number,
-        //limit # 
-       min: 1,
-       max: 100   
+        min: 1,
+        max: 100   
     }
 },
 {timestamps: true}
@@ -27,7 +25,7 @@ const exerciseSchema = new mongoose.Schema({
 
 
 //Create the model
-const exercise = mongoose.model('exercise', exerciseSchema)
+// const exercise = mongoose.model('exercise', exerciseSchema)
 
 //export
-module.exports = exercise; 
+module.exports = exerciseSchema; 
