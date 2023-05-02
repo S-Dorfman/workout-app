@@ -11,8 +11,8 @@ function NavBar({ user, setUser }) {
       <Link to="/workouts">Workout History</Link>
       {" "} | {" "}
       <Link to="/workouts/new">New Workout</Link> 
-      {" "} | {" "}
-      <Link to="/workouts/edit">Edit Workout</Link> 
+      {/* {" "} | {" "} */}
+      {/* <Link to="/workouts/edit">Edit Workout</Link>  */}
       {" "}
       <span>Welcome, {user.name}</span>
       {" "}
