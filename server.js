@@ -31,6 +31,7 @@ app.use('/api/workouts', require('./routes/api/workouts'))
 
 
 
+
 // Put API routes here, before the "catch all" route
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests

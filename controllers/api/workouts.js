@@ -5,8 +5,10 @@
 const Workout = require('../../models/workout')
 
 
-//* --- Helper function ---
+//* --- Helper functions ---
 
+
+//* create
 async function create(req, res) {
     console.log(req.body);
     // Try Catch: If we get a good request we will go within TRY and create a workout, 
@@ -24,8 +26,28 @@ async function create(req, res) {
     }
 }
 
+
+//* view
+async function view(req, res) {
+    // console.log(req.body);
+    try {
+        const workoutLogs = await Workout.find(req.body);
+        console.log(workoutLogs); 
+        res.status(200).json(workoutLogs);
+
+    } catch (error) {
+        // console.log(error);
+        res.status(400).json({ msg: error.message })
+    }
+}
+
+//* update
+
+//*delete
+
 module.exports = {
-    create
+    create,
+    view
 }
 
 // async function create(req, res) {
@@ -33,10 +55,6 @@ module.exports = {
 //     const workout = await Workout.create(req.body)
 //     console.log(workout)
     // res.json(req.exp)
-// }
-
-// module.exports = {
-//     create
 // }
 
 

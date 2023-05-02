@@ -11,6 +11,8 @@ const workoutCtrl = require('../../controllers/api/workouts');
 //*POST method to receive form data
 
 router.post('/', workoutCtrl.create);
+
+router.get('/workouts', workoutCtrl.view);
 // router.post('/login', usersCtrl.login);
 // router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
 
