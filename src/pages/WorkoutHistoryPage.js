@@ -30,8 +30,14 @@ function WorkoutHistoryPage() {
         console.log(workoutLog)
         return (
           <div key={workoutLog._id}>
-          Log: 
-          <a href={`/workouts/${workoutLog._id}`}>{' '}{workoutLog.muscleGroup}</a> 
+          Workout Details: 
+          <nav>
+          <a href={`/workouts/${workoutLog._id}`}>{' '}{workoutLog.muscleGroup}</a>
+          </nav> 
+          {workoutLog.createdAt}
+          <nav>
+          <a href={`/workouts/${workoutLog._id}/edit`}>Edit</a>
+          </nav>
           </div>
         )
       })}

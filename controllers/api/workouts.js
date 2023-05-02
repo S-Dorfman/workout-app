@@ -42,12 +42,26 @@ async function view(req, res) {
 }
 
 //* update
+async function editWorkout(req, res) {
+    console.log(req.body);
+    try {
+        const workout = await Workout.findByIdAndUpdate(req.body);
+        console.log(workout); 
+        res.json(req.body);
+
+    } catch (error) {
+        // console.log(error);
+        res.status(400).json(error)
+    }
+}
+
 
 //*delete
 
 module.exports = {
     create,
-    view
+    view,
+    editWorkout
 }
 
 // async function create(req, res) {

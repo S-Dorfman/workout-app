@@ -10,6 +10,7 @@ import NavBar from './components/NavBar';
 import { getUser } from './utilities/users-service';
 
 import './App.css';
+import EditWorkoutPage from './pages/EditWorkoutPage';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/workouts/new' element={ <NewWorkoutPage /> }/>
         <Route path='/workouts' element={ <WorkoutHistoryPage /> }/>
+        <Route path='/workouts/edit' element={ <EditWorkoutPage /> }/>
       </Routes>
       </>
      : 

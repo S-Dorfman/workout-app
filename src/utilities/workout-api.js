@@ -19,6 +19,13 @@ export function view() {
     return sendRequest(`${BASE_URL}/workouts`);
   }
 
+//*Edit workouts
+export function editWorkout() {
+    return sendRequest(`${BASE_URL}/workouts/edit`);
+  }
+
+//* Delete workouts
+
 
   /*--- Helper Functions ---*/
 
