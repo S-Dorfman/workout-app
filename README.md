@@ -4,7 +4,9 @@
 
  A MERN stack workout tracker app made for fitness enthusiasts to plan and track their workouts.
 
- ![App Screenshot](Drawio.png)
+ ![App Screenshot](src/images/Drawio.png)
+ ![App Screenshot](src/images/layout.png)
+ ![App Screenshot](src/images/layout2.png)
 
 ## Resources
 - [Mongoose Documentation](https://mongoosejs.com/docs/) 
