@@ -10,6 +10,7 @@
 
 ## Resources
 - [Mongoose Documentation](https://mongoosejs.com/docs/) 
+- [ER Diagram](https://www.lucidchart.com/pages/er-diagrams?a=0)
 - [YouTube Tutorial](https://www.youtube.com/watch?v=I7EDAR2GRVo&list=PLhwvZuAVtz8Ftb0AphUjvDG30_PQbIHd3&index=1&t=2436s&pp=gAQBiAQB) 
 - [YouTube Tutorial](https://www.youtube.com/watch?v=1NrHkjlWVhM&list=PLhwvZuAVtz8Ftb0AphUjvDG30_PQbIHd3&index=2&t=2137s&pp=gAQBiAQB) 
 - And a special thank you to my instructors and colleagues at Per Scholas for their guidance and insight along the way!
@@ -35,4 +36,4 @@ List any unsolved issues.
 
 - [LinkedIn](https://www.linkedin.com/in/shoshana-dorfman-859b161a2/)
 - [Github](https://github.com/S-Dorfman)
-- [Email](sdorfman.tech@gmail.com)
+- sdorfman.tech@gmail.com
