@@ -25,12 +25,12 @@
 - [Trello Board](https://trello.com/b/16W86INb/mern-project)
 
 ## Unsolved Problems: 
-List any unsolved issues.
+- Delete route
 
 ## Roadmap:
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+- [ ] Email authentication
+- [ ] 3 tiered schema so multiple exercises can be logged under each workout, and multiple sets can be logged under each exercise.
+- [ ] Responsive Design
 
 ## Contact:
 
