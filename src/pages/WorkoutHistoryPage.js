@@ -35,9 +35,9 @@ function WorkoutHistoryPage() {
           <a href={`/workouts/${workoutLog._id}`}>{' '}{workoutLog.muscleGroup}</a>
           </nav> 
           {workoutLog.createdAt}
-          <nav>
+          <button type="submit" value="PUT">
           <a href={`/workouts/${workoutLog._id}/edit`}>Edit</a>
-          </nav>
+          </button>
           </div>
         )
       })}

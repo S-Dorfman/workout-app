@@ -41,17 +41,33 @@ async function view(req, res) {
     }
 }
 
-//* update
-async function editWorkout(req, res) {
-    console.log(req.body);
+//* Single View
+async function singleWorkout(req, res) {
+    console.log(req.params.workoutId);
+    console.log("controller update function");
     try {
-        const workout = await Workout.findByIdAndUpdate(req.body);
-        console.log(workout); 
-        res.json(req.body);
+        const workoutLogs = await Workout.findById(req.params.workoutId).exec();
+        console.log(workoutLogs); 
+        res.status(200).json(workoutLogs);
 
     } catch (error) {
         // console.log(error);
-        res.status(400).json(error)
+        res.status(400).json({ msg: error.message })
+    }
+}
+
+//* update
+async function editWorkout(req, res) {
+    console.log("PARAMS", req.params.workoutId)
+    console.log("BODY", req.body);
+    try {
+        const workout = await Workout.findByIdAndUpdate(req.params.workoutId, req.body, {new: true});
+        console.log(workout); 
+        res.json(workout);
+
+    } catch (error) {
+        // console.log(error);
+        res.status(500).json(error)
     }
 }
 
@@ -61,7 +77,8 @@ async function editWorkout(req, res) {
 module.exports = {
     create,
     view,
-    editWorkout
+    editWorkout,
+    singleWorkout
 }
 
 // async function create(req, res) {

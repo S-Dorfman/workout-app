@@ -11,6 +11,7 @@ import { getUser } from './utilities/users-service';
 
 import './App.css';
 import EditWorkoutPage from './pages/EditWorkoutPage';
+import SingleWorkoutPage from './pages/SingleWorkout';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -23,7 +24,8 @@ function App() {
       <Routes>
         <Route path='/workouts/new' element={ <NewWorkoutPage /> }/>
         <Route path='/workouts' element={ <WorkoutHistoryPage /> }/>
-        <Route path='/workouts/edit' element={ <EditWorkoutPage /> }/>
+        <Route path='/workouts/:workoutId' element={ <SingleWorkoutPage /> }/>
+        <Route path='/workouts/:workoutId/edit' element={ <EditWorkoutPage /> }/>
       </Routes>
       </>
      : 

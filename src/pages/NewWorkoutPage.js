@@ -3,9 +3,18 @@ import { useState } from "react";
 import { logWorkout } from '../utilities/workout-api';
 
 function NewWorkoutPage() {
+
+  //state 
   const [showAddExercise, setShowAddExercise] = useState(false);
-  const [workout, setWorkout] = useState({muscleGroup: "", workoutDate: ""});
-  const [exercise, setExercise] = useState({exerciseName: "", sets: "", reps: "" })
+  const [workout, setWorkout] = useState({
+    muscleGroup: "", 
+    workoutDate: ""
+  });
+  const [exercise, setExercise] = useState({
+    exerciseName: "", 
+    sets: "", 
+    reps: "" 
+  })
   const handleWorkoutChange = (e) => {
     setWorkout({...workout, [e.target.name]: e.target.value})
   }
